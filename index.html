@@ -545,10 +545,11 @@
           </div>
         </div>
 
-        <form name="contact" action="/thankyou.html" netlify class="php-email-form aos-init aos-animate">
+        <form name="contact" method="POST" data-netlify="true" class="php-email-form aos-init aos-animate"
+          onSubmit="submit">
           <!-- Honeypot field for spam protection -->
-          <input type="hidden" name="form-name" value="contact">
-          <input type="hidden" name="bot-field">
+          <!-- <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="bot-field"> -->
 
           <div class="row gy-4">
             <div class="col-md-6">
@@ -568,13 +569,7 @@
                 required></textarea>
             </div>
 
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
+            <button type="submit">Send Message</button>
           </div>
         </form>
 
@@ -630,7 +625,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 
 </body>
 
