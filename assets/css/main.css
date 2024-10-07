@@ -1350,7 +1350,8 @@ section,
   color: var(--contrast-color);
 }
 
-.contact .php-email-form {
+.contact .php-email-form,
+#contact-form .php-email-form {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
