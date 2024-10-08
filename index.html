@@ -545,28 +545,28 @@
           </div>
         </div>
 
-        <form name="contact" method="POST" netlify class="php-email-form aos-init aos-animate">
-          <input type="hidden" name="form-name" value="contact">
+        <form name="contact" method="POST" data-netlify="true" class="php-email-form aos-init aos-animate">
           <div class="row gy-4">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-            <div class="col-md-12">
-              <input type="text" id="subject" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-            <div class="col-md-12">
-              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Message"
-                required=""></textarea>
-            </div>
-            <div class="col-md-12 text-center">
-              <button type="submit">Submit</button>
-            </div>
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                  <option value="leader">Leader</option>
+                  <option value="follower">Follower</option>
+                </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
           </div>
         </form>
-
 
 
         <!-- End Contact Form -->
